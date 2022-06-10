@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="style.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/8d74194162.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Poppins:wght@300&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Document</title>
+    
+</head>
+<style>
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+
+<body>
+
+
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800" style="background-color:white;height: 50px;">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <!-- <a href="https://flowbite.com" class="flex items-center">
+        <img src="/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"> -->
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white" style="font-size: 25px;font-family: 'Josefin Sans', sans-serif;font-weight: bold;color: black;">Fit Feet</span>
+        </a>
+        <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu" >
+        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+        <li>
+        <a href="search.html" class="block py-2 pr-4 pl-3 text-white bg-black-900 rounded  md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page"style="font-size: 20px;">Search</a>
+        </li>          
+        <li>
+        <a href="#home" class="block py-2 pr-4 pl-3 text-blue-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" style="font-size: 20px;">Home</a>
+        </li>
+        <!-- <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" style="font-size: 25px;color: black;"><i class="fa-solid fa-location-dot"></i></a>
+        </li> -->
+        <li>
+          <a href="login.html" target="_blank" class="block py-2 pr-4 pl-3 text-blue-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" style="font-size: 20px;">Contact Us</a>
+          </li>
+        <li>
+        <a href="cart.html"  class="block py-2 pr-4 pl-3 text-blue-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"style="font-size: 20px;">Cart</a>
+        </li>
+        <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style="font-size: 25px;color:black;padding-left: 47px;"><i class="fa-solid fa-bars"></i></a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+    
+
+
+
+
+
+    <div class="flex items-center justify-center py-8">
+        <button onclick="checkoutHandler(false)"
+            class="py- px- rounded bg-indigo-600 hover:bg-indigo-700 text-white"></button>
+    </div>
+    <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/shopping-cart-1-svg1.svg"
+        alt="previous" />
+    <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/shopping-cart-1-svg1dark.svg"
+        alt="previous" />
+    <p class="text-sm pl-2 leading-none dark:hover:text-gray-200" >Back  </p>
+    </div>
+    <p class="lg:text-4xl text-3xl font-black leading-10 text-gray-800 dark:text-white pt-3">Cart</p>
+    <div class="md:flex items-strech py-8 md:py-10 lg:py-8 border-t border-gray-50">
+        <div class="md:w-4/12 2xl:w-1/4 w-full">
+            <img src="https://i.ibb.co/SX762kX/Rectangle-36-1.png" alt="Black Leather Bag"
+                class="h-full object-center object-cover md:block hidden" />
+            <img src="https://i.ibb.co/g9xsdCM/Rectangle-37.pngg" alt="Black Leather Bag"
+                class="md:hidden w-full h-full object-center object-cover" />
+        </div>
+        <div class="md:pl-3 md:w-8/12 2xl:w-3/4 flex flex-col justify-center">
+            <p class="text-xs leading-3 text-gray-800 dark:text-white md:pt-0 pt-4">RF293</p>
+            <div class="flex items-center justify-between w-full pt-1">
+                <p class="text-base font-black leading-none text-gray-800 dark:text-white">North wolf bag</p>
+                <select aria-label="Select quantity"
+                    class="py-2 px-1 border border-gray-200 mr-6 focus:outline-none dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                </select>
+            </div>
+            <p class="text-xs leading-3 text-gray-600 dark:text-white pt-2">Height: 10 inches</p>
+            <p class="text-xs leading-3 text-gray-600 dark:text-white py-4">Color: Black</p>
+            <p class="w-96 text-xs leading-3 text-gray-600 dark:text-white">Composition: 100% calf leather</p><br>
+            <div class="flex items-center justify-between pt-5">
+                <div class="flex itemms-center">
+                    <p class="text-xs leading-3 underline text-gray-800 dark:text-white cursor-pointer">Add to favorites
+                    </p><br>
+                    <p class="text-xs leading-3 underline text-red-500 pl-5 cursor-pointer">Remove</p><br>
+                </div>
+                <p class="text-base font-black leading-none text-gray-800 dark:text-white">$0</p>
+            </div>
+        </div>
+    </div>
+    <div class="md:flex items-strech py-8 md:py-10 lg:py-8 border-t border-gray-50">
+        <div class="md:w-4/12 2xl:w-1/4 w-full">
+            <img src="https://i.ibb.co/c6KyDXN/Rectangle-5-1.png" alt="Gray Sneakers"
+                class="h-full object-center object-cover md:block hidden" />
+            <img src="https://i.ibb.co/yVSpYqx/Rectangle-6.png" alt="Gray Sneakers"
+                class="md:hidden w-full h-full object-center object-cover" />
+        </div>
+        <div class="md:pl-3 md:w-8/12 2xl:w-3/4 flex flex-col justify-center">
+            <p class="text-xs leading-3 text-gray-800 dark:text-white md:pt-0 pt-4">RF293</p>
+            <div class="flex items-center justify-between w-full pt-1">
+                <p class="text-base font-black leading-none text-gray-800 dark:text-white">LW sneakers</p>
+                <select aria-label="Select quantity"
+                    class="py-2 px-1 border border-gray-200 mr-6 focus:outline-none dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                </select>
+            </div>
+            <p class="text-xs leading-3 text-gray-600 dark:text-white pt-2">Height: 10 inches</p>
+            <p class="text-xs leading-3 text-gray-600 dark:text-white py-4">Color: Black</p>
+            <p class="w-96 text-xs leading-3 text-gray-600 dark:text-white">Composition: 100% calf leather</p><br>
+            <div class="flex items-center justify-between pt-5">
+                <div class="flex itemms-center">
+                    <p class="text-xs leading-3 underline text-gray-800 dark:text-white cursor-pointer">Add to favorites
+                    </p><br>
+                    <p class="text-xs leading-3 underline text-red-500 pl-5 cursor-pointer">Remove</p>
+                </div>
+                <p class="text-base font-black leading-none text-gray-800 dark:text-white">$0</p>
+            </div>
+        </div>
+    </div>
+    <div class="md:flex items-strech py-8 md:py-10 lg:py-8 border-t border-gray-50">
+        <div class="md:w-4/12 2xl:w-1/4 w-full">
+            <img src="https://i.ibb.co/6gzWwSq/Rectangle-20-1.png" alt="Black Leather Purse"
+                class="h-full object-center object-cover md:block hidden" />
+            <img src="https://i.ibb.co/TTnzMTf/Rectangle-21.png" alt="Black Leather Purse"
+                class="md:hidden w-full h-full object-center object-cover" />
+        </div>
+        <div class="md:pl-3 md:w-8/12 2xl:w-3/4 flex flex-col justify-center">
+            <p class="text-xs leading-3 text-gray-800 dark:text-white md:pt-0 pt-4">RF293</p>
+            <div class="flex items-center justify-between w-full">
+                <p class="text-base font-black leading-none text-gray-800 dark:text-white">Luxe card holder</p>
+                <select aria-label="Select quantity"
+                    class="py-2 px-1 border border-gray-200 mr-6 focus:outline-none dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                </select>
+            </div>
+            <p class="text-xs leading-3 text-gray-600 dark:text-white pt-2">Height: 10 inches</p>
+            <p class="text-xs leading-3 text-gray-600 dark:text-white py-4">Color: Black</p>
+            <p class="w-96 text-xs leading-3 text-gray-600 dark:text-white">Composition: 100% calf leather</p><br>
+            <div class="flex items-center justify-between pt-5">
+                <div class="flex itemms-center">
+                    <p class="text-xs leading-3 underline text-gray-800 dark:text-white cursor-pointer">Add to favorites
+                    </p><br>
+                    <p class="text-xs leading-3 underline text-red-500 pl-5 cursor-pointer">Remove</p><br>
+                </div>
+                <p class="text-base font-black leading-none text-gray-800 dark:text-white">$0</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr style="margin-top: 20px;">
+    <div class="lg:w-96 md:w- w-full bg-gray-100 dark:bg-gray-900 h-full" style="margin-top: 20px;">
+        <div
+            class="flex flex-col lg:h-screen h-auto lg:px-8 md:px-7 px-4 lg:py-20 md:py-10 py-6 justify-between overflow-y-auto">
+            <div>
+                <p class="lg:text-4xl text-3xl font-black leading-9 text-gray-800 dark:text-white">Summary</p>
+                <div class="flex items-center justify-between pt-16">
+                    <p class="text-base leading-none text-gray-800 dark:text-white">Subtotal</p>
+                    <p class="text-base leading-none text-gray-800 dark:text-white">$0</p>
+                </div>
+                <div class="flex items-center justify-between pt-5">
+                    <p class="text-base leading-none text-gray-800 dark:text-white">Shipping</p>
+                    <p class="text-base leading-none text-gray-800 dark:text-white">$0</p>
+                </div>
+                <div class="flex items-center justify-between pt-5">
+                    <p class="text-base leading-none text-gray-800 dark:text-white">Tax</p>
+                    <p class="text-base leading-none text-gray-800 dark:text-white">$0</p>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center pb-6 justify-between lg:pt-5 pt-20">
+                    <p class="text-2xl leading-normal text-gray-800 dark:text-white">Total</p>
+                    <p class="text-2xl font-bold leading-normal text-right text-gray-800 dark:text-white">$0</p>
+                </div>
+                <button onclick="checkoutHandler1(true)"
+                    class="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white dark:hover:bg-gray-700">Checkout</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <style>
+        /* width */
+        #scroll::-webkit-scrollbar {
+            width: 1px;
+        }
+
+        /* Track */
+        #scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        #scroll::-webkit-scrollbar-thumb {
+            background: rgb(133, 132, 132);
+        }
+    </style>
+    </div>
+</body>
+
+</html>
